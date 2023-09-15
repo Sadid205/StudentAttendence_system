@@ -5,7 +5,7 @@ const userSchema = new Schema({
     type:String,
     required:true,
     minlength: 3,
-    maxlength: 10,
+    maxlength: 30,
   },
   email: {
     type:String,
@@ -25,7 +25,6 @@ const userSchema = new Schema({
   roles: {
     type: [String],
     required: true,
-    default: ['STUDENT']
   },
   accountStatus: {
     type: String,
