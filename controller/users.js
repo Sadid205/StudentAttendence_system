@@ -97,7 +97,6 @@ const deleteUSerById = async (req, res, next) => {
     if (!user) {
       throw error("User not found", 404);
     }
-    console.log(user)
     await user.deleteOne();
     return res.status(203).send();
   } catch (e) {
